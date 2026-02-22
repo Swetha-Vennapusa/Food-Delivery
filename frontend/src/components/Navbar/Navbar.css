@@ -1,3 +1,13 @@
+.app-name{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.i1{
+    height: 120px;
+    width: 120px;
+    
+}
 .navbar{
     padding: 20px 0px;
     display: flex;
@@ -128,4 +138,11 @@
 }
 .nav-profile-dropdown li:hover{
     color: tomato;
+}
+.app-name{
+    color: tomato;
+}
+.app-name i{
+    width: 40px;
+    padding-right: 20px;
 }

@@ -4,6 +4,7 @@ import { assets } from '../../assets/assets';
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 
+
 const Navbar = ({setShowLogin}) => {
 
     const [menu,setMenu]=useState("home")
@@ -20,7 +21,7 @@ const Navbar = ({setShowLogin}) => {
 
   return (
     <div className='navbar'>
-      <Link to="/"><img src={assets.logo} className='logo' alt=""/></Link>
+      <Link to="/" className='app-name'><i class="fa-solid fa-burger"></i>  QuickBite</Link>
       <ul className="navbar-menu">
         <Link to="/" onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>home</Link>
         <a href="#explore-menu" onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>menu</a>
