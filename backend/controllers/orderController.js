@@ -1,6 +1,9 @@
 import orderModel from "../models/orderModel.js"; 
 import userModel from "../models/userModel.js";
 import Stripe from "stripe"
+import dotenv from "dotenv";
+dotenv.config();
+
 
 
 if (!process.env.STRIPE_SECRET_KEY) {
@@ -8,7 +11,8 @@ if (!process.env.STRIPE_SECRET_KEY) {
 }
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-console.log("Stripe Key:", process.env.STRIPE_SECRET_KEY);
+console.log("Stripe:", process.env.STRIPE_SECRET_KEY);
+
 
 
 //placing user order for frontend
