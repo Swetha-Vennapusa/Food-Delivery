@@ -9,7 +9,7 @@ const Header = () => {
           className="header"
           style={{
             backgroundImage: `url(${headerImg})`,
-            backgroundSize: "contain",
+            backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center"
           }}
